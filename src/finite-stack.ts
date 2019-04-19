@@ -3,6 +3,7 @@
  * LIFO stack with finite history
  */
 
+import ow from 'ow'
 import { LinkedList } from 'linked-list-typescript'
 import { AccessError } from './internal/access-error'
 
@@ -21,6 +22,10 @@ export class Stack<T> {
      * @param capacity - Capacity of created stack
      */
     constructor(capacity: number = 2) {
+        ow(capacity, ow.number.is(
+            x => x >= 0 || `Expected capacity to be at least 0 (got '${capacity}')`
+        ))
+
         this.capacity = capacity
         this.list = new LinkedList()
     }

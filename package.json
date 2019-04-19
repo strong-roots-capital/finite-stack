@@ -42,7 +42,8 @@
   },
   "homepage": "https://github.com/strong-roots-capital/finite-stack",
   "dependencies": {
-    "linked-list-typescript": "^1.0.15"
+    "linked-list-typescript": "^1.0.15",
+    "ow": "^0.12.0"
   },
   "devDependencies": {
     "@types/node": "^10.14.4",
