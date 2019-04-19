@@ -15,7 +15,7 @@ const test = anyTest as TestInterface<TestContext>;
 
 
 test.beforeEach(t => {
-    t.context.stack = new Stack(2)
+    t.context.stack = new Stack(3)
 })
 
 
