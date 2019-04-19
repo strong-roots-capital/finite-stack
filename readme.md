@@ -11,14 +11,27 @@ npm install @strong-roots-capital/finite-stack
 ## Use
 
 ```typescript
-import { finiteStack } from '@strong-roots-capital/finite-stack'
-// TODO: describe usage
+import { Stack } from '@strong-roots-capital/finite-stack'
+
+const stack = new Stack<number>()
+
+stack.push(0)
+console.log(stack.toArray())
+//=>[ 0 ]
+
+stack.push(1)
+console.log(stack.toArray())
+//=>[ 1, 0 ]
+
+stack.push(2)
+console.log(stack.toArray())
+//=>[ 2, 1 ]
 ```
 
 ## Related
 
-TODO
+- [stack-typescript](https://github.com/sfkiwi/stack-typescript)
 
 ## Acknowledgments
 
-TODO
+- [linked-list-typescript](https://github.com/sfkiwi/linked-list-typescript)

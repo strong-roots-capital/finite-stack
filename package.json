@@ -41,7 +41,9 @@
     "url": "https://github.com/strong-roots-capital/finite-stack/issues"
   },
   "homepage": "https://github.com/strong-roots-capital/finite-stack",
-  "dependencies": {},
+  "dependencies": {
+    "linked-list-typescript": "^1.0.15"
+  },
   "devDependencies": {
     "@types/node": "^10.14.4",
     "ava": "^1.4.1",
