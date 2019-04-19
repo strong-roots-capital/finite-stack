@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/finite-stack",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "LIFO stack with finite history",
   "main": "dist/src/finite-stack.js",
   "types": "dist/src/finite-stack.d.ts",
