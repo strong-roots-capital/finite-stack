@@ -19,7 +19,6 @@ Generically-typed stack with finite length.
 ### Properties
 
 * [capacity](stack.md#capacity)
-* [list](stack.md#list)
 
 ### Accessors
 
@@ -42,7 +41,7 @@ Generically-typed stack with finite length.
 
 ⊕ **new Stack**(capacity?: *`number`*): [Stack](stack.md)
 
-*Defined in [finite-stack.ts:17](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L17)*
+*Defined in [finite-stack.ts:17](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L17)*
 
 Create a stack with specified capacity.
 
@@ -64,16 +63,7 @@ ___
 
 **● capacity**: *`number`*
 
-*Defined in [finite-stack.ts:16](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L16)*
-
-___
-<a id="list"></a>
-
-###  list
-
-**● list**: *`LinkedList`<`T`>*
-
-*Defined in [finite-stack.ts:17](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L17)*
+*Defined in [finite-stack.ts:16](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L16)*
 
 ___
 
@@ -85,7 +75,7 @@ ___
 
 **get size**(): `number`
 
-*Defined in [finite-stack.ts:38](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L38)*
+*Defined in [finite-stack.ts:38](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L38)*
 
 Return quantity of elements in stack.
 
@@ -102,7 +92,7 @@ ___
 
 ▸ **isEmpty**(): `boolean`
 
-*Defined in [finite-stack.ts:71](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L71)*
+*Defined in [finite-stack.ts:71](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L71)*
 
 Test if the stack contains no elements.
 
@@ -116,7 +106,7 @@ ___
 
 ▸ **peek**(): `T`
 
-*Defined in [finite-stack.ts:59](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L59)*
+*Defined in [finite-stack.ts:59](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L59)*
 
 Returns the most-recently pushed element in the stack.
 
@@ -130,7 +120,7 @@ ___
 
 ▸ **push**(element: *`T`*): `void`
 
-*Defined in [finite-stack.ts:47](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L47)*
+*Defined in [finite-stack.ts:47](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L47)*
 
 Push an element onto the stack>
 
@@ -149,7 +139,7 @@ ___
 
 ▸ **toArray**(): `T`[]
 
-*Defined in [finite-stack.ts:81](https://github.com/strong-roots-capital/finite-stack/blob/8956189/src/finite-stack.ts#L81)*
+*Defined in [finite-stack.ts:81](https://github.com/strong-roots-capital/finite-stack/blob/c1d944f/src/finite-stack.ts#L81)*
 
 Return stack contents as an array, with most-recently pushed elements first.
 
