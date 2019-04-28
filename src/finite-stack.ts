@@ -13,15 +13,15 @@ import { AccessError } from './internal/access-error'
  */
 export class Stack<T> {
 
-    capacity: number
-    list: LinkedList<T>;
+    public capacity: number
+    protected list: LinkedList<T>;
 
     /**
      * Create a stack with specified capacity.
      *
      * @param capacity - Capacity of created stack
      */
-    constructor(capacity: number = 2) {
+    public constructor(capacity: number = 2) {
         ow(capacity, ow.number.is(
             x => x >= 0 || `Expected capacity to be at least 0 (got '${capacity}')`
         ))
@@ -35,7 +35,7 @@ export class Stack<T> {
      *
      * @returns Number of elements in stack
      */
-    get size() {
+    public get size(): number {
         return this.list.length
     }
 
@@ -44,7 +44,7 @@ export class Stack<T> {
      *
      * @param element - Element to push onto the stack
      */
-    push(element: T) {
+    public push(element: T): void {
         this.list.prepend(element)
         if (this.list.length > this.capacity) {
             this.list.removeTail()
@@ -56,7 +56,7 @@ export class Stack<T> {
      *
      * @returns Most recently-pushed element in stack
      */
-    peek(): T {
+    public peek(): T {
         if (this.isEmpty()) {
             throw new AccessError('Attempted to peek at empty list', this.peek)
         }
@@ -68,7 +68,7 @@ export class Stack<T> {
      *
      * @returns True if stack has had no elements pushed
      */
-    isEmpty(): boolean {
+    public isEmpty(): boolean {
         return this.list.length === 0
     }
 
@@ -78,7 +78,7 @@ export class Stack<T> {
      *
      * @returns Stack contents as an array
      */
-    toArray(): T[] {
+    public toArray(): T[] {
         return this.list.toArray()
     }
 }

@@ -8,7 +8,7 @@ import { Stack } from '../src/finite-stack'
 
 
 interface TestContext {
-    stack: Stack<number>
+    stack: Stack<number>;
 }
 
 const test = anyTest as TestInterface<TestContext>;
