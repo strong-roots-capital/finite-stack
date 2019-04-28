@@ -58,7 +58,7 @@ export class Stack<T> {
      */
     public peek(): T {
         if (this.isEmpty()) {
-            throw new AccessError('Attempted to peek at empty list', this.peek)
+            throw new AccessError('Attempted to peek at empty list', this.peek.bind(this))
         }
         return this.list.head
     }
