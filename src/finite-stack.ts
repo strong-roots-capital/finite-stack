@@ -23,6 +23,12 @@ export type EmptyStack<T> = Stack<T> & EmptyStackBrand
 
 export type NonEmptyStack<T> = Stack<T> & NonEmptyStackBrand
 
+export const isEmptyStack = <T>(stack: Stack<T>): stack is EmptyStack<T> =>
+  stack.type === 'EmptyStack'
+
+export const isNonEmptyStack = <T>(stack: Stack<T>): stack is NonEmptyStack<T> =>
+  stack.type === 'NonEmptyStack'
+
 export const stack = <T>(capacity: number): EmptyStack<T> => {
   return {
     capacity: Math.max(capacity, 0),
@@ -32,7 +38,7 @@ export const stack = <T>(capacity: number): EmptyStack<T> => {
 }
 
 export const push = <T>(value: T) => (
-  stack: Stack<T> | EmptyStack<T>,
+  stack: Stack<T>,
 ): NonEmptyStack<T> => {
   stack._values.prepend(value)
   if (stack.capacity < stack._values.length) {
@@ -46,5 +52,7 @@ export const push = <T>(value: T) => (
 }
 
 export const peek = <T>(stack: NonEmptyStack<T>): T => stack._values.head
+
+export const size = (stack: Stack<unknown>): number => stack._values.length
 
 export const toArray = <T>(stack: Stack<T>): T[] => stack._values.toArray()

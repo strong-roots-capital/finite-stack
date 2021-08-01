@@ -57,8 +57,11 @@ Acknowledgments
 
 ### Functions
 
+* [isEmptyStack](#isemptystack)
+* [isNonEmptyStack](#isnonemptystack)
 * [peek](#peek)
 * [push](#push)
+* [size](#size)
 * [stack](#stack)
 * [toArray](#toarray)
 
@@ -72,7 +75,7 @@ Acknowledgments
 
 **Ƭ EmptyStack**: *[Stack](#stack)<`T`> & [EmptyStackBrand](interfaces/emptystackbrand.md)*
 
-*Defined in [finite-stack.ts:22](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L22)*
+*Defined in [finite-stack.ts:22](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L22)*
 
 ___
 <a id="nonemptystack"></a>
@@ -81,7 +84,7 @@ ___
 
 **Ƭ NonEmptyStack**: *[Stack](#stack)<`T`> & [NonEmptyStackBrand](interfaces/nonemptystackbrand.md)*
 
-*Defined in [finite-stack.ts:24](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L24)*
+*Defined in [finite-stack.ts:24](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L24)*
 
 ___
 <a id="stack"></a>
@@ -90,7 +93,7 @@ ___
 
 **Ƭ Stack**: *`object`*
 
-*Defined in [finite-stack.ts:8](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L8)*
+*Defined in [finite-stack.ts:8](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L8)*
 
 #### Type declaration
 
@@ -98,13 +101,53 @@ ___
 
 ## Functions
 
+<a id="isemptystack"></a>
+
+### `<Const>` isEmptyStack
+
+▸ **isEmptyStack**<`T`>(stack: *[Stack](#stack)<`T`>*): `boolean`
+
+*Defined in [finite-stack.ts:26](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L26)*
+
+**Type parameters:**
+
+#### T 
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| stack | [Stack](#stack)<`T`> |
+
+**Returns:** `boolean`
+
+___
+<a id="isnonemptystack"></a>
+
+### `<Const>` isNonEmptyStack
+
+▸ **isNonEmptyStack**<`T`>(stack: *[Stack](#stack)<`T`>*): `boolean`
+
+*Defined in [finite-stack.ts:29](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L29)*
+
+**Type parameters:**
+
+#### T 
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| stack | [Stack](#stack)<`T`> |
+
+**Returns:** `boolean`
+
+___
 <a id="peek"></a>
 
 ### `<Const>` peek
 
 ▸ **peek**<`T`>(stack: *[NonEmptyStack](#nonemptystack)<`T`>*): `T`
 
-*Defined in [finite-stack.ts:48](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L48)*
+*Defined in [finite-stack.ts:54](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L54)*
 
 **Type parameters:**
 
@@ -124,7 +167,7 @@ ___
 
 ▸ **push**<`T`>(value: *`T`*): `(Anonymous function)`
 
-*Defined in [finite-stack.ts:34](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L34)*
+*Defined in [finite-stack.ts:40](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L40)*
 
 **Type parameters:**
 
@@ -138,13 +181,30 @@ ___
 **Returns:** `(Anonymous function)`
 
 ___
+<a id="size"></a>
+
+### `<Const>` size
+
+▸ **size**(stack: *[Stack](#stack)<`unknown`>*): `number`
+
+*Defined in [finite-stack.ts:56](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L56)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| stack | [Stack](#stack)<`unknown`> |
+
+**Returns:** `number`
+
+___
 <a id="stack"></a>
 
 ### `<Const>` stack
 
 ▸ **stack**<`T`>(capacity: *`number`*): [EmptyStack](#emptystack)<`T`>
 
-*Defined in [finite-stack.ts:26](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L26)*
+*Defined in [finite-stack.ts:32](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L32)*
 
 **Type parameters:**
 
@@ -164,7 +224,7 @@ ___
 
 ▸ **toArray**<`T`>(stack: *[Stack](#stack)<`T`>*): `T`[]
 
-*Defined in [finite-stack.ts:50](https://github.com/strong-roots-capital/finite-stack/blob/fccbfe6/src/finite-stack.ts#L50)*
+*Defined in [finite-stack.ts:58](https://github.com/strong-roots-capital/finite-stack/blob/116996e/src/finite-stack.ts#L58)*
 
 **Type parameters:**
 
