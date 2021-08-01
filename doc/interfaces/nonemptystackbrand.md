@@ -22,7 +22,7 @@
 
 **● type**: *"NonEmptyStack"*
 
-*Defined in [finite-stack.ts:19](https://github.com/strong-roots-capital/finite-stack/blob/b86d6b2/src/finite-stack.ts#L19)*
+*Defined in [finite-stack.ts:19](https://github.com/strong-roots-capital/finite-stack/blob/3bc59ea/src/finite-stack.ts#L19)*
 
 ___
 
