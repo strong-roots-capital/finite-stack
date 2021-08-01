@@ -1,15 +1,15 @@
-import { Stack } from '../src/finite-stack'
+import * as Stack from '../src/finite-stack'
 
-const stack = new Stack<number>()
+const emptyStack: Stack.EmptyStack<number> = Stack.stack<number>(2)
 
-stack.push(0)
-console.log(stack.toArray())
+let nonEmptyStack: Stack.NonEmptyStack<number> = Stack.push(0)(emptyStack)
+console.log(Stack.toArray(nonEmptyStack))
 //=>[ 0 ]
 
-stack.push(1)
-console.log(stack.toArray())
+nonEmptyStack = Stack.push(1)(nonEmptyStack)
+console.log(Stack.toArray(nonEmptyStack))
 //=>[ 1, 0 ]
 
-stack.push(2)
-console.log(stack.toArray())
+nonEmptyStack = Stack.push(2)(nonEmptyStack)
+console.log(Stack.toArray(nonEmptyStack))
 //=>[ 2, 1 ]
